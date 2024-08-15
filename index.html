@@ -8,8 +8,9 @@
 </head>
 <body>
     <div id="password-prompt" class="password-prompt">
-        <div>
-            <input type="password" id="password" placeholder="우리가 사귀기 시작한 날짜! (001212 형식으로 입력)">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <input type="password" id="password" placeholder="우리가 사귀기 시작한 날짜!">
+            <p style="color: #ccc;">(001212 형식으로 입력하기)</p>
             <button id="submit-password">확인</button>
         </div>
         
@@ -49,7 +50,7 @@
             </div>
         </div>
 
-        <div class="btns">
+        <div class="special-inner-button">
             <button id="newImg">다른 사진 보기</button>
             <button id="triggerLetter">편지 보기</button>
         </div>
