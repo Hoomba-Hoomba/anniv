@@ -14,6 +14,18 @@ body {
     overflow: hidden;
 }
 
+h1 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
 .row {
     display: flex;
     overflow: hidden;
@@ -98,8 +110,10 @@ body {
 }
 
 .special-inner img {
-    max-height: 500px;
-    max-width: 500px;
+    /* max-height: 500px;
+    max-width: 500px; */
+    width: 100%;
+    height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -131,6 +145,22 @@ body {
     cursor: pointer;
 }
 
+.special-inner-button {
+    position: absolute;
+    bottom: 3vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+}
+.special-inner-button button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
 
 .letter-div {
     display: none;
@@ -231,27 +261,28 @@ body {
 
 .special-inner {
     display: flex;
+    flex-direction: column;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(255, 255, 255, 0.8);
-    width: 70vw;
+    width: 90vw;
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
     border-radius: 1vw;
     gap: 2vw;
-    text-align: end;
+    text-align: center;
 }
 
 .date {
-    font-size: 1.8vw;
+    font-size: 20px;
     font-weight: 700;
 }
 .address {
-    font-size: 1.5vw;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .special-inner-wrap div {
@@ -278,9 +309,9 @@ body {
 }
 .btns button {
     border: none;
-    font-size: 1.2vw;
-    padding: 0.5vw 1vw;
-    border-radius: 1vw;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 20px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -299,7 +330,7 @@ body {
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     color: white;
-    padding: 3vw 10vw;
+    padding: 3vw;
     height: 100vh;
     line-height: 3vw;
     font-size: 1.3vw;
@@ -314,7 +345,7 @@ body {
 }
 
 .letter-text {
-    height: 80vh;
+    height: 94vh;
     overflow: auto;
     border: 1px solid white;
     padding: 1vw 2vw;
@@ -323,11 +354,11 @@ body {
 
 #close-letter {
     position: absolute;
-    top: 1vw;
-    right: 2vw;
-    font-size: 1.3vw;
-    padding: 0.5vw 1vw;
-    border-radius: 1vw;
+    top: 3vw;
+    right: 3vw;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 20px;
     border: none;
     cursor: pointer;
 }
@@ -373,16 +404,17 @@ body {
 }
 
 .password-prompt input {
-    width: 400px;
+    /* width: 400px; */
     border: 1px solid lightgray;
-    margin-right: 10px;
+    /* margin-right: 10px; */
     border-radius: 1vw;
     padding: 30px 15px;
     font-size: 18px;
 }
 
 .password-prompt button {
-    height: 90px;
+    /* height: 90px; */
+    width: 200px;
     border: none;
     font-size: 16px;
     border-radius: 20px;
